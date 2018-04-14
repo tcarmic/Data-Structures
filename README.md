@@ -1,2 +1,2 @@
-# Data-Structures
-C++ ADT data structures for reuse
+# Data Structures
+C++ ADT data structures for reuse.
