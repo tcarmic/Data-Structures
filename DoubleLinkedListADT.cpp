@@ -88,31 +88,6 @@ public:
 };
 
 int main(){
-/*
-	// DEMO
-	linkedList<int> sampleLinkedList;
-	sampleLinkedList.insertStart(50);
-	sampleLinkedList.insertStart(61);
-	sampleLinkedList.insertStart(25);
-	sampleLinkedList.insertStart(73);
-	sampleLinkedList.insertStart(92);
-	sampleLinkedList.insertEnd(48);
-	cout << "Linked List Before: ";
-	sampleLinkedList.printList();
-	cout << "\nInserting Node at End.\n";
-	sampleLinkedList.insertEnd(17);
-	sampleLinkedList.printList();
-	cout << "\nInserting Node at Start.\n";
-	sampleLinkedList.insertStart(23);
-	sampleLinkedList.printList();
-	cout << "\nDeleting Node at Start.\n";
-	sampleLinkedList.deleteFirst();
-	sampleLinkedList.printList();
-	cout << "\nDeleting Node at End.\n";
-	sampleLinkedList.deleteLast();
-	sampleLinkedList.printList();
-	cout << "\n";
-*/
-	//system("pause"); // uncomment if windows
+	
 	return 0;
 }
