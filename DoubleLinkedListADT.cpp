@@ -81,7 +81,10 @@ public:
 		tail->next = NULL;
 		delete temp;
 	}
-
+	
+	void deleteFullList(){
+		// next: add function to delete each node of linkedlist
+	}
 };
 
 int main(){
@@ -110,6 +113,6 @@ int main(){
 	sampleLinkedList.printList();
 	cout << "\n";
 */
-	//system("pause"); // if windows
+	//system("pause"); // uncomment if windows
 	return 0;
 }
