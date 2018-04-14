@@ -10,8 +10,10 @@ struct node {
 
 template <class T>
 class linkedList {
-public:
+private:
 	node<T> *head, *tail;
+public:
+	
 	linkedList(){
 		head = NULL;
 		tail = NULL;
@@ -83,7 +85,7 @@ public:
 };
 
 int main(){
-
+/*
 	// DEMO
 	linkedList<int> sampleLinkedList;
 	sampleLinkedList.insertStart(50);
@@ -107,7 +109,7 @@ int main(){
 	sampleLinkedList.deleteLast();
 	sampleLinkedList.printList();
 	cout << "\n";
-
-	system("pause");
+*/
+	//system("pause"); // if windows
 	return 0;
 }
