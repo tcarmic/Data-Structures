@@ -12,7 +12,6 @@ private:
 	node<T> *head, *tail;
 
 public:
-
 	linkedList() {
 		head = NULL;
 		tail = NULL;
