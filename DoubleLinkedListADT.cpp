@@ -1,6 +1,4 @@
 // @Thomas - Double Linked List w/ ADT template implementation
-#include<iostream>
-using namespace std;
 
 template <class T>
 struct node {
@@ -12,23 +10,24 @@ template <class T>
 class linkedList {
 private:
 	node<T> *head, *tail;
+
 public:
-	
-	linkedList(){
+
+	linkedList() {
 		head = NULL;
 		tail = NULL;
 	}
 
-	void printList(){
+	void printList() {
 		node<T> *temp = new node<T>;
 		temp = head;
-		while (temp != NULL){
-			cout << temp->info << " ";
+		while (temp != NULL) {
+			std::cout << temp->info << " ";
 			temp = temp->next;
 		}
 	}
-	
-	void insertStart(T data){
+
+	void insertStart(T data) {
 		node<T> *temp = new node<T>;
 		temp->info = data;
 		temp->next = NULL;
@@ -60,9 +59,9 @@ public:
 		tail = temp;
 	}
 
-	void deleteFirst(){
-		if (head == NULL){
-			cerr << "ERROR: Cannot delete, list empty.\n";
+	void deleteFirst() {
+		if (head == NULL) {
+			std::cerr << "ERROR: Cannot delete, list empty.\n";
 			return;
 		}
 		node<T> *temp = head;
@@ -71,9 +70,9 @@ public:
 		delete temp;
 	}
 
-	void deleteLast(){
+	void deleteLast() {
 		if (head == NULL) {
-			cerr << "ERROR: Cannot delete, list empty.\n";
+			std::cerr << "ERROR: Cannot delete, list empty.\n";
 			return;
 		}
 		node<T> *temp = tail;
@@ -81,13 +80,22 @@ public:
 		tail->next = NULL;
 		delete temp;
 	}
-	
-	void deleteFullList(){
-		// next: add function to delete each node of linkedlist
-	}
-};
 
-int main(){
-	
-	return 0;
-}
+	void deleteFullList() {
+		if (head == NULL) {
+			std::cerr << "ERROR: Cannot delete, list empty.\n";
+			return;
+		}
+		node<T> *temp = head;
+		node<T> *tempNext;
+		while (temp != NULL) {
+			tempNext = temp->next;
+			delete temp;
+			temp = tempNext;
+		}
+		head = NULL;
+		tail = NULL;
+	}
+
+	// next: add function to insert/delete a specific element or location in list
+};
