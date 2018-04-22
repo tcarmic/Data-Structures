@@ -3,7 +3,7 @@
 	ADT/Template Double Linked Link
 	https://github.com/tcarmic/Data-Structures/edit/master/DoubleLinkedListADT.cpp
 	
-	next:
+	Next:
     	1) function to sort template list in (nlog(n)) time, perhaps Mergesort
         	1a) function to insert an element into sorted list
     		1b) function to delete all elements before/after an index/value in sorted list
@@ -104,7 +104,7 @@ public:
         Node<T> *tempNext;
         while (temp != nullptr) {
             tempNext = temp->next;
-            delete temp;
+            temp = nullptr;
             temp = tempNext;
         }
         tempNext = nullptr;
