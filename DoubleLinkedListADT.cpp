@@ -4,10 +4,10 @@
 	https://github.com/tcarmic/Data-Structures/edit/master/DoubleLinkedListADT.cpp
 	
 	next:
-    1) function to sort template list in (nlog(n)) time, perhaps Mergesort
-        1a) function to insert an element into sorted list
-    	1b) function to delete all elements before/after an index/value in sorted list
-	2) circular linked list implementation
+    	1) function to sort template list in (nlog(n)) time, perhaps Mergesort
+        	1a) function to insert an element into sorted list
+    		1b) function to delete all elements before/after an index/value in sorted list
+		2) circular linked list implementation
 */
 
 template <class T>
