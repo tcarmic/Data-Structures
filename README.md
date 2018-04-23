@@ -1,4 +1,4 @@
 # C++ Data Structures for reuse
 
 - **Linked List** 
->> Next functions to add: InsertAtPosition(), DeleteAtPosition(), DeleteByValue()
+>> Next functions to add: InsertAtPosition(), InsertIntoSortedList(), DeleteAtPosition()
