@@ -75,7 +75,7 @@ int main() {
     test.InsertStart(8); test.InsertStart(10);
     test.PrintList();
 
-    // architecture specific output compilation:
+    // architecture specific output:
 #if _WIN32 
     std::cout << "Press any key to continue." << std::endl;
     system("pause");
