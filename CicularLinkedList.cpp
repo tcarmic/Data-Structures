@@ -77,9 +77,10 @@ int main() {
 
     // architecture specific output compilation:
 #if _WIN32 
+    std::cout << "Press any key to continue." << std::endl;
     system("pause");
 #else
-    std::cout << "Press any key to continue." << std::endl;
+    std::cout << "Press enter to continue." << std::endl;
     std::cin.ignore(std::numeric_limits< std::streamsize >::max(), '\n');
 #endif
 
