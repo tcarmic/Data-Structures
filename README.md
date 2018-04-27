@@ -13,4 +13,4 @@
 >> Stack based
 
 ** TODO Tree Inheritance **
->> [ Binary Tree -> BST -> AVL -> B-Tree ]
+>> [ Tree -> Binary Tree -> BST -> AVL -> B-Tree -> Red/Black Tree]
