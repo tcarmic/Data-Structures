@@ -1,4 +1,4 @@
-# C++ Data Structures for reuse Contributing: [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+# C++ Data Structures, Contributing: [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 - **Double Linked List** 
 >> Next functions: InsertAtPosition(), InsertIntoSortedList(), DeleteAtPosition()
