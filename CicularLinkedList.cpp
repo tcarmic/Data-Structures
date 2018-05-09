@@ -58,6 +58,30 @@ public:
         first->prev = temp;
         first = temp;
     }
+
+    void InsertEnd(const T &data) {
+        Node<T> *temp = new Node<T>;
+        temp->info = data;
+        temp->next = nullptr;
+        temp->prev = nullptr;
+        if (first == nullptr) {
+            first = temp;
+            temp = nullptr;
+            return;
+        }
+        else if (first->next == nullptr) {
+            temp->next = first;
+            temp->prev = first;
+            first->next = temp;
+            first->prev = temp;
+            temp = nullptr;
+            return;
+        }
+        temp->next = first;
+        temp->prev = first->prev;
+        first->prev->next = temp;
+        first->prev = temp;
+    }
     
     // TODO
     // various other insert and delete methods
