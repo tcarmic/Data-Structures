@@ -98,14 +98,28 @@ public:
         first->prev = first->prev->prev;
         temp = nullptr;
     }
+    
+    void DeleteLast() {
+        if (first == nullptr) {
+            std::cerr << "ERROR: Cannot delete, list empty.\n";
+            return;
+        }
+        else if (first->next == nullptr) {
+            first = nullptr;
+            return;
+        }
+        Node<T> *temp = first->prev;
+        temp->prev->next = first;
+        first->prev = temp->prev;
+        temp = nullptr;
+    }
 };
 
 // demo
 int main() {
     LinkedList<int> test;
-    test.InsertStart(0); test.InsertStart(2);
-    test.InsertStart(4); test.InsertStart(6);
-    test.InsertStart(8); test.InsertStart(10);
+    test.InsertStart(0); test.InsertStart(2); test.InsertStart(4);
+    test.InsertStart(6); test.InsertStart(8); test.InsertStart(10);
     test.PrintList();
 
     // architecture specific output:
