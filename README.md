@@ -1,8 +1,8 @@
 ## C++ Data Structures, Contributing: [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-- **Double Linked List** - 
+- **Double Linked List** - Complete for now.
 
-- **Circular Linked List** - 
+- **Circular Linked List** - Complete for now.
     
 - **TODO: BFS Graph Seach**
     Queue based
