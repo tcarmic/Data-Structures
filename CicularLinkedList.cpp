@@ -83,12 +83,21 @@ public:
         first->prev = temp;
     }
     
-    // TODO
-    // various other insert and delete methods
-    // traverse/print from specific node
-    // sort circular linked list
-    // searching algs on sorted list
-
+    void DeleteFirst() {
+        if (first == nullptr) {
+            std::cerr << "ERROR: Cannot delete, list empty.\n";
+            return;
+        }
+        else if (first->next == nullptr) {
+            first = nullptr;
+            return;
+        }
+        Node<T> *temp = first;
+        first = first->next;
+        temp->prev->next = first;
+        first->prev = first->prev->prev;
+        temp = nullptr;
+    }
 };
 
 // demo
