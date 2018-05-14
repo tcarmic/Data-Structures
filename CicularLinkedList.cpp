@@ -1,6 +1,6 @@
 /*	
 	Thomas Carmichael 
-	ADT/Template Double Linked Link
+	ADT/Template Ciruclar Doubly Linked Link
 	https://github.com/tcarmic/Data-Structures/edit/master/DoubleLinkedListADT.cpp
 */
 #include <iostream>
