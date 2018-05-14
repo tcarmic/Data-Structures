@@ -1,4 +1,8 @@
-// Thomas Carmichael - Circular Linked List w/ ADT template implementation
+/*	
+	Thomas Carmichael 
+	ADT/Template Double Linked Link
+	https://github.com/tcarmic/Data-Structures/edit/master/DoubleLinkedListADT.cpp
+*/
 #include <iostream>
 #include <string>
 #define _WIN32 0 // define 1 if windows 32 architecture
